@@ -159,3 +159,53 @@ public struct DataPoint: Decodable {
     }
     
 }
+
+extension DataPoint {
+    public init(time: Date) {
+        self.time = time
+        self.summary = nil
+        self.icon = nil
+        self.sunriseTime = nil
+        self.sunsetTime = nil
+        self.moonPhase = nil
+        self.nearestStormDistance = nil
+        self.nearestStormBearing = nil
+        self.precipitationIntensity = nil
+        self.precipitationIntensityError = nil
+        self.precipitationIntensityMax = nil
+        self.precipitationIntensityMaxTime = nil
+        self.precipitationProbability = nil
+        self.precipitationType = nil
+        self.precipitationAccumulation = nil
+        self.temperature = nil
+        self.temperatureLow = nil
+        self.temperatureLowTime = nil
+        self.temperatureHigh = nil
+        self.temperatureHighTime = nil
+        self.temperatureMax = nil
+        self.temperatureMaxTime = nil
+        self.temperatureMin = nil
+        self.temperatureMinTime = nil
+        self.apparentTemperature = nil
+        self.apparentTemperatureLow = nil
+        self.apparentTemperatureLowTime = nil
+        self.apparentTemperatureHigh = nil
+        self.apparentTemperatureHighTime = nil
+        self.apparentTemperatureMax = nil
+        self.apparentTemperatureMaxTime = nil
+        self.apparentTemperatureMin = nil
+        self.apparentTemperatureMinTime = nil
+        self.dewPoint = nil
+        self.windGust = nil
+        self.windGustTime = nil
+        self.windSpeed = nil
+        self.windBearing = nil
+        self.cloudCover = nil
+        self.humidity = nil
+        self.pressure = nil
+        self.visibility = nil
+        self.ozone = nil
+        self.uvIndex = nil
+        self.uvIndexTime = nil
+    }
+}
